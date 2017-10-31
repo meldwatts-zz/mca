@@ -2,3 +2,7 @@ input {
     margin: auto;
     width: 33%;
 }
+
+select{
+    width: 100%;
+}
