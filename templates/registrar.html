@@ -6,15 +6,19 @@
   <meta charset="utf-8">
   <title>Registro de Ingreso o Egreso</title>
   <meta name="description" content="Registro de Ingreso o Egreso">
-  <link rel="stylesheet" href="../public/static/css/styles.css">
+  <link rel="stylesheet" href="../public/static/css/registrar.css">
 </head>
 
 <body>
-    <select>
-        <option value="cedula">Cédula</option>
-        <option value="pase">Pase</option>
-        </select>
-  <input type="image" src="../public/static/images/log-in.png" border="0" alt="Ingreso" />
-  <input type="image" src="../public/static/images/log-out.png" border="0" alt="Egreso" />
+  <form action="/registro" method="post">
+    <div>
+      <input type="text" name="ingreso"><br>
+    </div>
+    <div>
+      <input type="image" src="../public/static/images/log-in.png" name="ingresar" value="ingresar"/>
+      <input type="image" src="../public/static/images/log-out.png" name="egresar" value="egresar"/>
+      <input type="submit" class="boton" name="egresar2" value="egresar2" />
+    </div>
+  </form> 
 </body>
 </html>

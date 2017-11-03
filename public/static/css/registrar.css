@@ -1,0 +1,23 @@
+input {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+select{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.boton{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    background-image: url(/public/static/images/log-out.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
