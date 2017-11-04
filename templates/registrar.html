@@ -10,15 +10,15 @@
 </head>
 
 <body>
-  <form action="/registro" method="post">
+  <form action="/registro" method="post" onkeypress="return event.keyCode != 13;">
     <div>
-      <input type="text" name="ingreso"><br>
+      <input type="text" name="ingreso" placeholder="Cédula o Pase" /><br>
     </div>
     <div>
-      <input type="image" src="../public/static/images/log-in.png" name="ingresar" value="ingresar"/>
-      <input type="image" src="../public/static/images/log-out.png" name="egresar" value="egresar"/>
-      <input type="submit" class="boton" name="egresar2" value="egresar2" />
+      <input type="submit" class="boton1" name="ingresar" value="ingresar" />
+      <input type="submit" class="boton2" name="egresar" value="egresar" />
     </div>
   </form> 
 </body>
+
 </html>

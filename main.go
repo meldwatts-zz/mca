@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 )
@@ -12,23 +11,24 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func registro(w http.ResponseWriter, r *http.Request) {
 	//w.Write([]byte(r.URL.Path))
-	r.ParseForm()
-	var message string
-	if r.Method == "GET" {
-		message = "No Permitido"
-	} else {
-		message = "all pending tasks POST"
-		ingreso := r.PostFormValue("ingreso")
-		ingresar := r.PostFormValue("ingresar")
-		egresar := r.PostFormValue("egresar")
-		egresar2 := r.PostFormValue("egresar2")
-		fmt.Println(ingreso)
-		fmt.Println(ingresar)
-		fmt.Println(egresar)
-		fmt.Println(egresar2)
+	//r.ParseForm()
+	ingreso := r.PostFormValue("ingreso")
+	ingresar := r.PostFormValue("ingresar")
+	egresar := r.PostFormValue("egresar")
+	//var message string
+	if ingresar == "ingresar" {
+		log.Println(ingreso)
+		log.Println(ingresar)
+		//	message = "Ingresar Visitante"
+		http.ServeFile(w, r, "templates/ingreso.html")
 	}
-	w.Write([]byte(message))
+	if egresar == "egresar" {
+		log.Println(ingreso)
+		log.Println(egresar)
+		//	message = "Salida de Visitante"
+	}
 
+	//w.Write([]byte(message))
 }
 
 func main() {
