@@ -7,9 +7,12 @@
   <title>Registro de Ingreso</title>
   <meta name="description" content="Registro de Ingreso">
   <link rel="stylesheet" href="../public/static/css/ingreso.css">
+  <script src="../public/static/js/captura.js">
+</script>
 </head>
 
 <body>
+    <form action="/registrar" method="post" onkeypress="return event.keyCode != 13;">
     <div class="titulo">
         <label for="datos"><h1>Datos</h1></label>
     </div>
@@ -43,7 +46,26 @@
     
     <div>
         <label for="fotos" class="titulo"><h2>Fotos</h2></label>
+
+        <div class="contentarea">
+           <div class="camera">
+            <video id="video">Camara no Disponible</video>
+            <button id="startbutton">Tomar Foto</button> 
+          </div>
+          <canvas id="canvas">
+          </canvas>
+          <div class="output">
+            <img id="photo" alt="La foto Aparecerá en este aquí."> 
+          </div>
+            
+        </div>
     </div>
+
+    <div class="button">
+        <input type="submit" class="boton1" name="ingresar" value="ingresar" />
+        <input type="submit" class="boton2" name="egresar" value="egresar" />
+      </div>
+    </form>
 </body>
 
 </html>
