@@ -1,2 +1,2 @@
-# acceso
-Sistema para el control de acceso a las instalaciones de la Empresa
+# SICA
+Sistema Integral para el Control de Acceso a las instalaciones de la Empresa
