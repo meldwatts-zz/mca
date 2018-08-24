@@ -27,3 +27,7 @@ input {
     height: 200px;
     color: transparent;
 }
+
+body{
+    background-color: darkred;
+}
