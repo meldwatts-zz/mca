@@ -3,13 +3,14 @@
 <html lang="es-VE">
 
 <head>
-  <meta charset="utf-8">
-  <title>Registro de Ingreso</title>
-  <meta name="description" content="Registro de Ingreso">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../public/static/css/ingreso.css">
-  <script src="../public/static/js/captura.js">
-</script>
+    <meta charset="utf-8">
+    <title>Registro de Ingreso</title>
+    <meta name="description" content="Registro de Ingreso">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../public/static/css/ingreso.css">
+    <script src="../public/static/js/captura.js">
+
+    </script>
 </head>
 
 <body>
@@ -17,11 +18,15 @@
     <form action="/registrar" method="post" onkeypress="return event.keyCode != 13;">
 
         <div class="titulo">
-            <label for="datos"><h1>Datos</h1></label>
+            <label for="datos">
+                <h1>Datos de Ingreso</h1>
+            </label>
         </div>
 
         <div class="titulo">
-            <label for="visitante"><h2>Visitante</h2></label>
+            <label for="visitante">
+                <h2>Visitante</h2>
+            </label>
         </div>
 
         <div class="datos">
@@ -36,11 +41,13 @@
             <label for="segundo_apellido">2do. Apellido:</label>
             <input type="text">
         </div>
-    
+
         <div class="titulo">
-            <label for="visita"><h2>Visita</h2></label>
+            <label for="visita">
+                <h2>Visita</h2>
+            </label>
         </div>
-    
+
         <div class="datos">
             <label for="piso">Piso:</label>
             <input type="text">
@@ -49,23 +56,25 @@
             <label for="servidor">Empleado:</label>
             <input type="text">
         </div>
-    
+
         <div>
-            <label for="fotos" class="titulo"><h2>Fotos</h2></label>
+            <label for="fotos" class="titulo">
+                <h2>Fotos</h2>
+            </label>
         </div>
 
         <div class="contentarea">
-           <div class="camera">
+            <div class="camera">
                 <video id="video">Camara no Disponible</video>
-                <button id="startbutton">Tomar Foto</button> 
+                <button id="startbutton">Tomar Foto</button>
             </div>
-        
+
             <canvas id="canvas">
 
             </canvas>
-          
+
             <div class="output">
-              <img id="photo" alt="La foto Aparecerá en este aquí."> 
+                <img id="photo" alt="La foto Aparecerá en este aquí.">
             </div>
         </div>
 
@@ -73,7 +82,7 @@
             <input type="submit" class="boton1" name="ingresar" value="ingresar" />
             <input type="submit" class="boton2" name="egresar" value="egresar" />
         </div>
-    
+
     </form>
 
 </body>
